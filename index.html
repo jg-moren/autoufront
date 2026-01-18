@@ -14,14 +14,14 @@
         <h2 class="text-center mb-4">Analisador de E-mails</h2>
         
         <form id="emailForm">
-
+            
             <div class="mb-3">
-                <label for="emailTexto" class="form-label">Cole o texto do E-mail:</label>
+                <label for="emailTexto" class="form-label">Cole o texto:</label>
                 <textarea class="form-control" id="emailTexto" rows="3" placeholder="Conteúdo do e-mail..."></textarea>
             </div>
             
             <div class="mb-4">
-                <label class="form-label">Ou faça upload do arquivo de E-mail (PDF ou TXT):</label>
+                <label class="form-label">Ou faça o upload do arquivo de E-mail (PDF ou TXT):</label>
                 <div class="upload-area" id="dropZone">
                     <input type="file" class="file-input" id="emailArquivo" accept=".pdf,.txt">
                     
@@ -29,7 +29,6 @@
                         <p class="upload-text mb-0">Arraste seu arquivo aqui<br>ou clique para selecionar</p>
                     </div>
                 </div>
-                <div id="fileNameDisplay" class="text-center mt-2 text-info small"></div>
             </div>
 
             <button type="submit" class="btn btn-primary w-100 py-2" id="btnEnviar">

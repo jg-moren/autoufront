@@ -1,20 +1,20 @@
-body { 
+ body { 
     background-color: #212529; 
     padding-top: 50px; 
     color: #f8f9fa;
 }
 
 .container { max-width: 800px; }
-
 #resultadoArea { display: none; } 
 .spinner-border { display: none; }
 
+/* --- ESTILOS DA ÁREA DE UPLOAD --- */
 .upload-area {
     border: 2px dashed #6c757d;
     border-radius: 10px;
     background-color: #2b3035;
     position: relative;
-    height: 200px;
+    height: 100px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -29,6 +29,7 @@ body {
     background-color: #343a40;
 }
 
+/* O input cobre tudo com z-index 2 */
 .file-input {
     position: absolute;
     width: 100%;
@@ -37,6 +38,7 @@ body {
     left: 0;
     opacity: 0;
     cursor: pointer;
+    z-index: 2; /* Fica por cima de tudo inicialmente */
 }
 
 .upload-text {
@@ -44,15 +46,17 @@ body {
     text-align: center;
 }
 
+/* Botão de Remover (z-index alto para garantir clique) */
+.btn-remove-file {
+    z-index: 10;
+    position: relative;
+}
+
+/* Área de resposta */
 #respostaSugerida {
     background-color: #2b3035;
     border: 1px solid #495057 !important;
     color: #e9ecef;
-}
-
-textarea:focus {
-    background-color: #343a40 !important;
-    color: #fff !important;
 }
 
 textarea {
